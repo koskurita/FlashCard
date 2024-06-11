@@ -37,9 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    'debug_toolbar',
+    
+    #added
     'cards',
+    'rest_framework',   
+    "corsheaders",
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -51,8 +54,17 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
+    # this package is used to tell that its running from one origin. for mroe interactivity on the browser itself so user can enter things
+    'corsheaders.middleware.CorsMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
+    
 ]
+
+# add so react frontend can communicate
+REST_FRAMEWORK = {'DEFAULT_PERMISSION_CLASSES': ['rest_framework.permissions.AllowAny']}
+
+# for cors
+CORS_ORIGIN_ALLOW_ALL = True
 
 # added for debug toolbar
 INTERNAL_IPS = [

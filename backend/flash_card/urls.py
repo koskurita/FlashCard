@@ -16,10 +16,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+
+from cards.views import *
+
+
 # import debug_toolbar
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', ReactView.as_view(), name="anything"),
     path('cards/', include('cards.urls')),
     path("__debug__/", include("debug_toolbar.urls")),
+    
 ]
