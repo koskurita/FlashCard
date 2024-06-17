@@ -1,4 +1,4 @@
-# Language learning FlashCard App
+# Language Learning FlashCard App
 
 ## Motivation
 I'm learning Spanish and found that flashcards are really efficient way to expand vocabulary. 
