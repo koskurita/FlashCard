@@ -11,4 +11,7 @@ So, I decided to work on this project to make the process easier.
 2. Press Enter
 3. Go to Decks in the tabs section and select the newly created deck
 4. For each card, select the difficulty level of the card using the following metric
-      &nbsp;&nbsp;&nbsp;&nbsp; 
+      Again: Wasn't able to answer. The card will appear again soon.
+      Hard: Wasn't able to answer, but had a tip of the tongue feeling. The card will appear again but with a larger interval than Again.
+      Good: Was able to answer, but still need practice. The card will appear again but at a much larger interval than Hard.
+      Easy: Already knew the answer. Card will not appear again unless changed in the options.
